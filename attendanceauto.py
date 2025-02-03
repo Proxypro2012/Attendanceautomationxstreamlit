@@ -5,7 +5,7 @@ import json
 st.title("Streamlit JSON Receiver")
 
 # Get the query parameters using experimental API
-query_params = st.experimental_get_query_params()
+query_params = st.query_params
 
 # Get JSON from query param 'data'
 json_data = query_params.get('data', [None])[0]
